@@ -1,5 +1,6 @@
 {
   "name": "arvan-test",
+  "author": "Reza Heydari <r.heydarii98@gmail.com>",
   "private": true,
   "version": "0.0.0",
   "type": "module",
