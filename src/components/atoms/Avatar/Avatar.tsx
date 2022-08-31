@@ -1,19 +1,21 @@
 import TestPic from "@app/assets/space-man.png";
+import { CSSProperties } from "react";
 
-interface AvatarProps {
+export interface AvatarProps {
   width?: string;
   height?: string;
   src?: string;
   radius?: string;
   alt?: string;
   className?: string;
+  style?: CSSProperties;
 }
 
 export const Avatar = (props: AvatarProps) => {
-  const { width, height, src, radius, alt, className } = props;
+  const { width, height, src, radius, alt, className, style } = props;
   console.log(TestPic);
   return (
-    <div className={className}>
+    <div className={className} style={style}>
       <img
         style={{ width, height, borderRadius: radius }}
         width={width}
