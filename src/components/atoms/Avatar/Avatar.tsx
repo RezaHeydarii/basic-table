@@ -1,4 +1,4 @@
-import TestPic from "@app/assets/space-man.png";
+import TestPic from "@app/assets/cat.jpg";
 import { CSSProperties } from "react";
 
 export interface AvatarProps {

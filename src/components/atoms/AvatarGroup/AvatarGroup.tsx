@@ -24,13 +24,14 @@ export const AvatarGroup = (props: AvatarGroupProps) => {
               height={height}
               radius={radius}
               style={{ marginLeft: index > 0 ? "-2.7rem" : "0" }}
+              className="border rounded-circle"
             />
           );
         })}
         {avatars.length > (limit || 0) && (
           <div
             style={{ width, height, marginLeft: "-2.7rem" }}
-            className="rounded-circle bg-black d-flex justify-content-center align-items-center"
+            className="rounded-circle border bg-black d-flex justify-content-center align-items-center"
           >
             <p className="text-white">+{avatars.length - (limit || 0)}</p>
           </div>
